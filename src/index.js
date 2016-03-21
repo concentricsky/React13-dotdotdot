@@ -1,5 +1,4 @@
 var React = require('react');
-var ReactDOM = require('react-dom');
 var clamp = require('clamper');
 var PropTypes = React.PropTypes;
 /**
@@ -14,7 +13,7 @@ function Dotdotdot() {
 Dotdotdot.prototype = Object.create(React.Component.prototype);
 Dotdotdot.prototype.componentDidUpdate = function() {
   if (this.props.clamp) {
-    this.dotdotdot(ReactDOM.findDOMNode(this.refs.container));
+    this.dotdotdot(React.findDOMNode(this.refs.container));
   }
 };
 
